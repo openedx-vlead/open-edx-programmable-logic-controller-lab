@@ -1,0 +1,332 @@
+<h1 class="text-h2-lightblue">Implementation Of PLC Arithmatic Instructions</h1>
+<p></p>
+<p class="PreformattedText" style="text-align: justify;"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> In case of PLC various instructions are available which can be used for computational purpose.<br /> The compute/math instructions evaluate arithmetic operations using an expression or a specific arithmetic instruction.<br /> Various instructions PLC can support are as follows.<br /> <br /><br /><br /></span></p>
+<p></p>
+<table class="MsoNormalTable" style="border-collapse: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 90.45pt; padding: 0in 5.4pt 0in 5.4pt; border: 1pt solid windowtext;" valign="top" width="121">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><b><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Instruction</span></b><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';"></span></p>
+</td>
+<td style="width: 351.45pt; border-width: 1pt 1pt 1pt initial; border-color: windowtext windowtext windowtext initial; border-style: solid solid solid none; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="469">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><b><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Description</span></b><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';"></span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 90.45pt; border-width: initial 1pt 1pt 1pt; border-color: initial windowtext windowtext windowtext; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="121">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">ADD</span></p>
+</td>
+<td style="width: 351.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="469">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Add two values&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 90.45pt; border-width: initial 1pt 1pt 1pt; border-color: initial windowtext windowtext windowtext; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="121">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">SUB</span></p>
+</td>
+<td style="width: 351.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="469">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Subtract two values</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 90.45pt; border-width: initial 1pt 1pt 1pt; border-color: initial windowtext windowtext windowtext; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="121">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">MUL</span></p>
+</td>
+<td style="width: 351.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="469">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Multiply two values</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 90.45pt; border-width: initial 1pt 1pt 1pt; border-color: initial windowtext windowtext windowtext; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="121">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">DIV</span></p>
+</td>
+<td style="width: 351.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="469">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Divide two values</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 90.45pt; border-width: initial 1pt 1pt 1pt; border-color: initial windowtext windowtext windowtext; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="121">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">MOD</span></p>
+</td>
+<td style="width: 351.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="469">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Determine the remainder after one value is divided by another</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 90.45pt; border-width: initial 1pt 1pt 1pt; border-color: initial windowtext windowtext windowtext; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="121">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">SQR</span></p>
+</td>
+<td style="width: 351.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="469">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Calculate the square root of a value</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 90.45pt; border-width: initial 1pt 1pt 1pt; border-color: initial windowtext windowtext windowtext; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="121">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">NEG</span></p>
+</td>
+<td style="width: 351.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="469">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Take the opposite sign of a value</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 90.45pt; border-width: initial 1pt 1pt 1pt; border-color: initial windowtext windowtext windowtext; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="121">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">ABS</span></p>
+</td>
+<td style="width: 351.45pt; border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid windowtext 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="469">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Take the absolute value of a value</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p class="PreformattedText" style="text-align: justify;"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> When these operations are carried out in the PLC, the type should be the same for source and destination e.g. real, integer etc. You can use mix data types, but loss of accuracy and rounding error occurs. The instruction may take more time to execute. <br /><br />A compute/math instruction executes once each time the instruction is scanned as long as the rung-condition-in is true. Out of the above; ADD, SUB, MUL and DIV instructions are available in the PLC simulator.<br /><br /> The input and output parameters associated with these instructions are: <br /><br /><br /><br /></span></p>
+<p></p>
+<table class="MsoTableGrid" style="border-collapse: collapse; mso-table-layout-alt: fixed; border: none; mso-border-alt: solid black .5pt; mso-border-themecolor: text1; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 5.4pt 0in 5.4pt;" border="1" cellpadding="0" cellspacing="0">
+<tbody>
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; height: 25.6pt;">
+<td style="width: 131.4pt; border: solid black 1.0pt; mso-border-themecolor: text1; mso-border-alt: solid black .5pt; padding: 0in 5.4pt 0in 5.4pt; height: 25.6pt;" valign="top" width="175">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12pt; line-height: 150%; font-family: Arial, sans-serif;">&nbsp;</span><b><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">&nbsp; Input &nbsp;Parameter &nbsp; &nbsp;</span></b><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';"></span></p>
+</td>
+<td style="width: 99.0pt; border: solid black 1.0pt; mso-border-themecolor: text1; border-left: none; mso-border-left-alt: solid black .5pt; mso-border-left-themecolor: text1; mso-border-alt: solid black .5pt; padding: 0in 5.4pt 0in 5.4pt; height: 25.6pt;" valign="top" width="132">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><b><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">&nbsp;&nbsp;Data&nbsp;&nbsp;Type&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;</span></b><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';"></span></p>
+</td>
+<td style="width: 3.45in; border: solid black 1.0pt; mso-border-themecolor: text1; border-left: none; mso-border-left-alt: solid black .5pt; mso-border-left-themecolor: text1; mso-border-alt: solid black .5pt; padding: 0in 5.4pt 0in 5.4pt; height: 25.6pt;" valign="top" width="331">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">&nbsp;<b>Description</b></span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 131.4pt; border: solid black 1.0pt; mso-border-themecolor: text1; border-top: none; mso-border-top-alt: solid black .5pt; mso-border-top-themecolor: text1; mso-border-alt: solid black .5pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="175">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">EnableIn</span></p>
+</td>
+<td style="width: 99.0pt; border-top: none; border-left: none; border-bottom: solid black 1.0pt; mso-border-bottom-themecolor: text1; border-right: solid black 1.0pt; mso-border-right-themecolor: text1; mso-border-top-alt: solid black .5pt; mso-border-top-themecolor: text1; mso-border-left-alt: solid black .5pt; mso-border-left-themecolor: text1; mso-border-alt: solid black .5pt; mso-border-themecolor: text1; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="132">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">BOOL</span></p>
+</td>
+<td style="width: 3.45in; border-top: none; border-left: none; border-bottom: solid black 1.0pt; mso-border-bottom-themecolor: text1; border-right: solid black 1.0pt; mso-border-right-themecolor: text1; mso-border-top-alt: solid black .5pt; mso-border-top-themecolor: text1; mso-border-left-alt: solid black .5pt; mso-border-left-themecolor: text1; mso-border-alt: solid black .5pt; mso-border-themecolor: text1; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="331">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Enable input.&nbsp;If cleared, the instruction does not execute and outputs are not updated</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 131.4pt; border: solid black 1.0pt; mso-border-themecolor: text1; border-top: none; mso-border-top-alt: solid black .5pt; mso-border-top-themecolor: text1; mso-border-alt: solid black .5pt; padding: 0in 5.4pt 0in 5.4pt;" width="175">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Source A</span></p>
+</td>
+<td style="width: 99.0pt; border-top: none; border-left: none; border-bottom: solid black 1.0pt; mso-border-bottom-themecolor: text1; border-right: solid black 1.0pt; mso-border-right-themecolor: text1; mso-border-top-alt: solid black .5pt; mso-border-top-themecolor: text1; mso-border-left-alt: solid black .5pt; mso-border-left-themecolor: text1; mso-border-alt: solid black .5pt; mso-border-themecolor: text1; padding: 0in 5.4pt 0in 5.4pt;" width="132">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">&nbsp;REAL</span></p>
+</td>
+<td style="width: 3.45in; border-top: none; border-left: none; border-bottom: solid black 1.0pt; mso-border-bottom-themecolor: text1; border-right: solid black 1.0pt; mso-border-right-themecolor: text1; mso-border-top-alt: solid black .5pt; mso-border-top-themecolor: text1; mso-border-left-alt: solid black .5pt; mso-border-left-themecolor: text1; mso-border-alt: solid black .5pt; mso-border-themecolor: text1; padding: 0in 5.4pt 0in 5.4pt;" width="331">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Value to add to Source B</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 131.4pt; border: solid black 1.0pt; mso-border-themecolor: text1; border-top: none; mso-border-top-alt: solid black .5pt; mso-border-top-themecolor: text1; mso-border-alt: solid black .5pt; padding: 0in 5.4pt 0in 5.4pt;" width="175">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Source B</span></p>
+</td>
+<td style="width: 99.0pt; border-top: none; border-left: none; border-bottom: solid black 1.0pt; mso-border-bottom-themecolor: text1; border-right: solid black 1.0pt; mso-border-right-themecolor: text1; mso-border-top-alt: solid black .5pt; mso-border-top-themecolor: text1; mso-border-left-alt: solid black .5pt; mso-border-left-themecolor: text1; mso-border-alt: solid black .5pt; mso-border-themecolor: text1; padding: 0in 5.4pt 0in 5.4pt;" width="132">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">&nbsp;REAL</span></p>
+</td>
+<td style="width: 3.45in; border-top: none; border-left: none; border-bottom: solid black 1.0pt; mso-border-bottom-themecolor: text1; border-right: solid black 1.0pt; mso-border-right-themecolor: text1; mso-border-top-alt: solid black .5pt; mso-border-top-themecolor: text1; mso-border-left-alt: solid black .5pt; mso-border-left-themecolor: text1; mso-border-alt: solid black .5pt; mso-border-themecolor: text1; padding: 0in 5.4pt 0in 5.4pt;" width="331">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Value to add to Source A</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /></p>
+<table class="MsoTableGrid" style="border-collapse: collapse; mso-table-layout-alt: fixed; border: none; mso-border-alt: solid black .5pt; mso-border-themecolor: text1; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 5.4pt 0in 5.4pt;" border="1" cellpadding="0" cellspacing="0">
+<tbody>
+<tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes; height: 25.6pt;">
+<td style="width: 131.4pt; border: solid black 1.0pt; mso-border-themecolor: text1; mso-border-alt: solid black .5pt; padding: 0in 5.4pt 0in 5.4pt; height: 25.6pt;" valign="top" width="175">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12pt; line-height: 150%; font-family: Arial, sans-serif;">&nbsp;</span><b><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">&nbsp; Output &nbsp;Parameter &nbsp; &nbsp;</span></b><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';"></span></p>
+</td>
+<td style="width: 99.0pt; border: solid black 1.0pt; mso-border-themecolor: text1; border-left: none; mso-border-left-alt: solid black .5pt; mso-border-left-themecolor: text1; mso-border-alt: solid black .5pt; padding: 0in 5.4pt 0in 5.4pt; height: 25.6pt;" valign="top" width="132">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><b><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">&nbsp;&nbsp;Data&nbsp;&nbsp;Type&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;</span></b><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';"></span></p>
+</td>
+<td style="width: 3.45in; border: solid black 1.0pt; mso-border-themecolor: text1; border-left: none; mso-border-left-alt: solid black .5pt; mso-border-left-themecolor: text1; mso-border-alt: solid black .5pt; padding: 0in 5.4pt 0in 5.4pt; height: 25.6pt;" valign="top" width="331">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">&nbsp;<b>Description</b></span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 131.4pt; border: solid black 1.0pt; mso-border-themecolor: text1; border-top: none; mso-border-top-alt: solid black .5pt; mso-border-top-themecolor: text1; mso-border-alt: solid black .5pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="175">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">EnableOut</span></p>
+</td>
+<td style="width: 99.0pt; border-top: none; border-left: none; border-bottom: solid black 1.0pt; mso-border-bottom-themecolor: text1; border-right: solid black 1.0pt; mso-border-right-themecolor: text1; mso-border-top-alt: solid black .5pt; mso-border-top-themecolor: text1; mso-border-left-alt: solid black .5pt; mso-border-left-themecolor: text1; mso-border-alt: solid black .5pt; mso-border-themecolor: text1; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="132">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">BOOL</span></p>
+</td>
+<td style="width: 3.45in; border-top: none; border-left: none; border-bottom: solid black 1.0pt; mso-border-bottom-themecolor: text1; border-right: solid black 1.0pt; mso-border-right-themecolor: text1; mso-border-top-alt: solid black .5pt; mso-border-top-themecolor: text1; mso-border-left-alt: solid black .5pt; mso-border-left-themecolor: text1; mso-border-alt: solid black .5pt; mso-border-themecolor: text1; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="331">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Enable output</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 131.4pt; border: solid black 1.0pt; mso-border-themecolor: text1; border-top: none; mso-border-top-alt: solid black .5pt; mso-border-top-themecolor: text1; mso-border-alt: solid black .5pt; padding: 0in 5.4pt 0in 5.4pt;" width="175">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Dest</span></p>
+</td>
+<td style="width: 99.0pt; border-top: none; border-left: none; border-bottom: solid black 1.0pt; mso-border-bottom-themecolor: text1; border-right: solid black 1.0pt; mso-border-right-themecolor: text1; mso-border-top-alt: solid black .5pt; mso-border-top-themecolor: text1; mso-border-left-alt: solid black .5pt; mso-border-left-themecolor: text1; mso-border-alt: solid black .5pt; mso-border-themecolor: text1; padding: 0in 5.4pt 0in 5.4pt;" width="132">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">&nbsp;REAL</span></p>
+</td>
+<td style="width: 3.45in; border-top: none; border-left: none; border-bottom: solid black 1.0pt; mso-border-bottom-themecolor: text1; border-right: solid black 1.0pt; mso-border-right-themecolor: text1; mso-border-top-alt: solid black .5pt; mso-border-top-themecolor: text1; mso-border-left-alt: solid black .5pt; mso-border-left-themecolor: text1; mso-border-alt: solid black .5pt; mso-border-themecolor: text1; padding: 0in 5.4pt 0in 5.4pt;" width="331">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 150%;"><span style="font-size: 12.0pt; line-height: 150%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Result of the math instruction</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> <b> ADD instruction: </b><br /><br /> The ADD instruction adds Source A to Source B and places the result in the Destination. <br /> <br />When the instruction is used in Relay Ladder the output parameter conditions are defined as mentioned below. <br /><br /><br /><br /></span></p>
+<p></p>
+<table class="MsoNormalTable" style="border-collapse: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 142.2pt; padding: 0in 5.4pt 0in 5.4pt; border: 1pt solid black;" valign="top" width="190">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><b><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Condition</span></b><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';"></span></p>
+</td>
+<td style="width: 3.2in; border-width: 1pt 1pt 1pt initial; border-color: black black black initial; border-style: solid solid solid none; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="307">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><b><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Action</span></b><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';"></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 1; height: 25.6pt;">
+<td style="width: 142.2pt; height: 25.6pt; border-width: initial 1pt 1pt 1pt; border-color: initial black black black; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="190">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">prescan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+</td>
+<td style="width: 3.2in; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: solid black 1.0pt; padding: 0in 5.4pt 0in 5.4pt; height: 25.6pt;" valign="top" width="307">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">The rung-condition-out is set to false.</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 142.2pt; border-width: initial 1pt 1pt 1pt; border-color: initial black black black; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="190">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">rung-condition-in is false</span></p>
+</td>
+<td style="width: 3.2in; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: solid black 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="307">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">The rung-condition-out is set to false.</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 142.2pt; border-width: initial 1pt 1pt 1pt; border-color: initial black black black; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="190">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">rung-condition-in is true</span></p>
+</td>
+<td style="width: 3.2in; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: solid black 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="307">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Destination = Source A + Source B</span></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">The rung-condition-out is set to true</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> <b> SUB instruction: </b><br /><br /> The SUB instruction subtracts Source B from Source A and places the result in the Destination.<br /><br /> When the instruction is used in Relay Ladder the output parameter conditions are defined as mentioned below. <br /><br /><br /><br /></span></p>
+<p></p>
+<table class="MsoNormalTable" style="border-collapse: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 2in; padding: 0in 5.4pt 0in 5.4pt; border: 1pt solid black;" valign="top" width="192">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><b><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Condition</span></b><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';"></span></p>
+</td>
+<td style="width: 229.5pt; border-width: 1pt 1pt 1pt initial; border-color: black black black initial; border-style: solid solid solid none; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="306">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><b><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Action</span></b><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';"></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 1; height: 25.6pt;">
+<td style="width: 2in; height: 25.6pt; border-width: initial 1pt 1pt 1pt; border-color: initial black black black; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="192">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">prescan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+</td>
+<td style="width: 229.5pt; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: solid black 1.0pt; padding: 0in 5.4pt 0in 5.4pt; height: 25.6pt;" valign="top" width="306">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">The rung-condition-out is set to false.</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 2in; border-width: initial 1pt 1pt 1pt; border-color: initial black black black; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="192">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">rung-condition-in is false</span></p>
+</td>
+<td style="width: 229.5pt; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: solid black 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="306">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">The rung-condition-out is set to false.</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 2in; border-width: initial 1pt 1pt 1pt; border-color: initial black black black; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="192">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">rung-condition-in is true</span></p>
+</td>
+<td style="width: 229.5pt; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: solid black 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="306">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Destination = Source A - Source B</span></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">The rung-condition-out is set to true</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> <b> MUL instruction: </b><br /><br /> The MUL instruction multiplies Source A with Source B and places the result in the Destination. <br /> <br />When the instruction is used in Relay Ladder the output parameter conditions are defined as mentioned below. <br /><br /><br /><br /></span></p>
+<p></p>
+<table class="MsoNormalTable" style="border-collapse: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 160pt; padding: 0in 5.4pt 0in 5.4pt; border: 1pt solid black;" valign="top" width="213">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><b><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Condition</span></b><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';"></span></p>
+</td>
+<td style="width: 240.95pt; border-width: 1pt 1pt 1pt initial; border-color: black black black initial; border-style: solid solid solid none; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="321">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><b><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Action</span></b><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';"></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 1; height: 25.6pt;">
+<td style="width: 160pt; height: 25.6pt; border-width: initial 1pt 1pt 1pt; border-color: initial black black black; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="213">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">prescan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+</td>
+<td style="width: 240.95pt; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: solid black 1.0pt; padding: 0in 5.4pt 0in 5.4pt; height: 25.6pt;" valign="top" width="321">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">The rung-condition-out is set to false.</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 160pt; border-width: initial 1pt 1pt 1pt; border-color: initial black black black; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="213">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">rung-condition-in is false</span></p>
+</td>
+<td style="width: 240.95pt; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: solid black 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="321">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">The rung-condition-out is set to false.</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 160pt; border-width: initial 1pt 1pt 1pt; border-color: initial black black black; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="213">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">rung-condition-in is true</span></p>
+</td>
+<td style="width: 240.95pt; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: solid black 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="321">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Destination = Source A * Source B</span></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">The rung-condition-out is set to true</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> <b> DIV instruction: </b><br /><br /> The DIV instruction divides Source A by Source B and places the result in the Destination. <br /> <br /> When the instruction is used in Relay Ladder the output parameter conditions are defined as mentioned below. <br /><br /><br /><br /></span></p>
+<p></p>
+<table class="MsoNormalTable" style="border-collapse: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in;" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="width: 160.2pt; padding: 0in 5.4pt 0in 5.4pt; border: 1pt solid black;" valign="top" width="214">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><b><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Condition</span></b><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';"></span></p>
+</td>
+<td style="width: 3.35in; border-width: 1pt 1pt 1pt initial; border-color: black black black initial; border-style: solid solid solid none; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="322">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><b><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Action</span></b><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';"></span></p>
+</td>
+</tr>
+<tr style="mso-yfti-irow: 1; height: 25.6pt;">
+<td style="width: 160.2pt; height: 25.6pt; border-width: initial 1pt 1pt 1pt; border-color: initial black black black; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="214">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">prescan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+</td>
+<td style="width: 3.35in; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: solid black 1.0pt; padding: 0in 5.4pt 0in 5.4pt; height: 25.6pt;" valign="top" width="322">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">The rung-condition-out is set to false.</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 160.2pt; border-width: initial 1pt 1pt 1pt; border-color: initial black black black; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="214">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">rung-condition-in is false</span></p>
+</td>
+<td style="width: 3.35in; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: solid black 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="322">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">The rung-condition-out is set to false.</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 160.2pt; border-width: initial 1pt 1pt 1pt; border-color: initial black black black; border-style: none solid solid solid; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="214">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">rung-condition-in is true</span></p>
+</td>
+<td style="width: 3.35in; border-top: none; border-left: none; border-bottom: solid black 1.0pt; border-right: solid black 1.0pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="322">
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Destination = Source A / Source B</span></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: 250%;"><span style="font-size: 12.0pt; line-height: 250%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">The rung-condition-out is set to true</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p><span style="font-size: 11pt; line-height: 115%; font-family: 'Calibri','sans-serif';"> </span></p>
+<p></p>
